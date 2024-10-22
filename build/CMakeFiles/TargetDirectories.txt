@@ -209,3 +209,6 @@ E:/SendMedicalCar_1/build/SMC/USART/CMakeFiles/rebuild_cache.dir
 E:/SendMedicalCar_1/build/SMC/Control/CMakeFiles/control.dir
 E:/SendMedicalCar_1/build/SMC/Control/CMakeFiles/edit_cache.dir
 E:/SendMedicalCar_1/build/SMC/Control/CMakeFiles/rebuild_cache.dir
+E:/SendMedicalCar_1/build/SMC/PWM/CMakeFiles/pwm.dir
+E:/SendMedicalCar_1/build/SMC/PWM/CMakeFiles/edit_cache.dir
+E:/SendMedicalCar_1/build/SMC/PWM/CMakeFiles/rebuild_cache.dir

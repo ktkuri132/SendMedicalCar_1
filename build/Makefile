@@ -258,6 +258,19 @@ control/fast:
 	$(MAKE) $(MAKESILENT) -f SMC\Control\CMakeFiles\control.dir\build.make SMC/Control/CMakeFiles/control.dir/build
 .PHONY : control/fast
 
+#=============================================================================
+# Target rules for targets named pwm
+
+# Build rule for target.
+pwm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pwm
+.PHONY : pwm
+
+# fast build rule for target.
+pwm/fast:
+	$(MAKE) $(MAKESILENT) -f SMC\PWM\CMakeFiles\pwm.dir\build.make SMC/PWM/CMakeFiles/pwm.dir/build
+.PHONY : pwm/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -275,6 +288,7 @@ help:
 	@echo ... i2c
 	@echo ... mpu6050
 	@echo ... oled
+	@echo ... pwm
 	@echo ... run
 	@echo ... usart
 .PHONY : help

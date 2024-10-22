@@ -7,7 +7,7 @@ target_link_libraries(run pico_stdlib)
 target_include_directories(run PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 target_include_directories(run PUBLIC ${CMAKE_CURRENT_LIST_DIR}/..)
 
-target_link_libraries(run i2c usart control)
+target_link_libraries(run i2c usart control pwm)
 
 pico_enable_stdio_usb(run 1)
 pico_enable_stdio_uart(run 0)

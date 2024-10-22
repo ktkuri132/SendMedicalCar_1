@@ -5,5 +5,6 @@
 #include <OLED.h>
 #include <usart.h>  
 #include <control.h>
+#include <pwm.h>
 
 #endif

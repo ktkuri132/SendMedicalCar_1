@@ -1350,6 +1350,7 @@ SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/build.make
 SMC/USER/run.elf: SMC/IIC/libi2c.a
 SMC/USER/run.elf: SMC/USART/libusart.a
 SMC/USER/run.elf: SMC/Control/libcontrol.a
+SMC/USER/run.elf: SMC/PWM/libpwm.a
 SMC/USER/run.elf: SMC/IIC/libi2c.a
 SMC/USER/run.elf: SMC/IIC/OLED/liboled.a
 SMC/USER/run.elf: SMC/IIC/libi2c.a

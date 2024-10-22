@@ -44,6 +44,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "E:/SendMedicalCar_1/SMC/IIC/CMakeLists.txt"
   "E:/SendMedicalCar_1/SMC/IIC/MPU6050/CMakeLists.txt"
   "E:/SendMedicalCar_1/SMC/IIC/OLED/CMakeLists.txt"
+  "E:/SendMedicalCar_1/SMC/PWM/CMakeLists.txt"
   "E:/SendMedicalCar_1/SMC/USART/CMakeLists.txt"
   "E:/SendMedicalCar_1/SMC/USER/CMakeLists.txt"
   "CMakeFiles/3.31.0-rc1/CMakeASMCompiler.cmake"
@@ -297,6 +298,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "SMC/IIC/MPU6050/CMakeFiles/CMakeDirectoryInformation.cmake"
   "SMC/USART/CMakeFiles/CMakeDirectoryInformation.cmake"
   "SMC/Control/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "SMC/PWM/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -312,4 +314,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "SMC/IIC/MPU6050/CMakeFiles/mpu6050.dir/DependInfo.cmake"
   "SMC/USART/CMakeFiles/usart.dir/DependInfo.cmake"
   "SMC/Control/CMakeFiles/control.dir/DependInfo.cmake"
+  "SMC/PWM/CMakeFiles/pwm.dir/DependInfo.cmake"
   )

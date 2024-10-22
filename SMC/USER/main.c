@@ -10,6 +10,7 @@ int main()
     OLED_Init();
     Control_Init();
     Control_task_Init();
+    PWM_Init();
     while (1) 
     {
         printf("Hello, world!\n");

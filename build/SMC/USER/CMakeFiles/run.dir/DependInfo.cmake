@@ -95,6 +95,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "E:/SendMedicalCar_1/SMC/USART/.."
   "E:/SendMedicalCar_1/SMC/Control"
   "E:/SendMedicalCar_1/SMC/Control/.."
+  "E:/SendMedicalCar_1/SMC/PWM"
+  "E:/SendMedicalCar_1/SMC/PWM/.."
   "E:/pico-sdk/src/common/pico_stdlib_headers/include"
   "E:/pico-sdk/src/rp2_common/hardware_gpio/include"
   "E:/pico-sdk/src/common/pico_base_headers/include"
@@ -148,6 +150,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "E:/pico-sdk/src/common/boot_picobin_headers/include"
   "E:/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "E:/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "E:/pico-sdk/src/rp2_common/hardware_pwm/include"
   )
 
 # The set of dependency files which are needed:

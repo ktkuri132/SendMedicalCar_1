@@ -2,7 +2,8 @@
     "files.associations": {
         "main.h": "c",
         "control.h": "c",
-        "usart.h": "c"
+        "usart.h": "c",
+        "pwm.h": "c"
     },
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "E:\\pico-sdk"

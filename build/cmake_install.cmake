@@ -44,6 +44,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("E:/SendMedicalCar_1/build/SMC/IIC/cmake_install.cmake")
   include("E:/SendMedicalCar_1/build/SMC/USART/cmake_install.cmake")
   include("E:/SendMedicalCar_1/build/SMC/Control/cmake_install.cmake")
+  include("E:/SendMedicalCar_1/build/SMC/PWM/cmake_install.cmake")
 
 endif()
 

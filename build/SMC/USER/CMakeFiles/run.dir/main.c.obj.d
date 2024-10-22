@@ -69,4 +69,8 @@ SMC/USER/CMakeFiles/run.dir/main.c.obj: \
  E:\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/i2c.h \
  E:\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/i2c.h \
  E:\SendMedicalCar_1\SMC\USART/usart.h \
- E:\SendMedicalCar_1\SMC\Control/control.h
+ E:\SendMedicalCar_1\SMC\Control/control.h \
+ E:\SendMedicalCar_1\SMC\PWM/pwm.h \
+ E:\pico-sdk\src\rp2_common\hardware_pwm\include/hardware/pwm.h \
+ E:\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/pwm.h \
+ E:\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/pwm.h
