@@ -1,5 +1,8 @@
 #include <main.h>
 
+//这里验证一下是否能够正常调用
+extern struct PID pid_test;
+
 int main()
 {
     stdio_init_all();
