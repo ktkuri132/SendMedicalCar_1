@@ -3614,6 +3614,7 @@ SMC/USER/CMakeFiles/run.dir/E_/pico-sdk/src/rp2_common/pico_unique_id/unique_id.
 SMC/USER/CMakeFiles/run.dir/main.c.obj: E:/SendMedicalCar_1/SMC/USER/main.c \
   E:/pico-sdk/src/boards/include/boards/pico.h \
   E:/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  E:/SendMedicalCar_1/SMC/Control/control.h \
   E:/SendMedicalCar_1/SMC/IIC/OLED/OLED.h \
   E:/SendMedicalCar_1/SMC/IIC/OLED/OLED_Data.h \
   E:/SendMedicalCar_1/SMC/USART/usart.h \
@@ -4216,6 +4217,8 @@ E:/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface
 E:/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:
 
 E:/pico-sdk/src/common/pico_stdlib_headers/include/pico/stdlib.h:
+
+E:/SendMedicalCar_1/SMC/Control/control.h:
 
 E:/SendMedicalCar_1/SMC/IIC/OLED/OLED.h:
 

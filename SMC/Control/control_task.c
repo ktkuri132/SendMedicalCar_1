@@ -1,7 +1,7 @@
 #include <control.h>
 
 
-void Contorl_Init()
+void Control_task_Init()
 {
     
 }

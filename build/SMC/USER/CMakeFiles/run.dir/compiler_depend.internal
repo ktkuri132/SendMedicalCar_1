@@ -3683,6 +3683,7 @@ SMC/USER/CMakeFiles/run.dir/main.c.obj
  E:/SendMedicalCar_1/SMC/USER/main.c
  E:/pico-sdk/src/boards/include/boards/pico.h
  E:/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+ E:/SendMedicalCar_1/SMC/Control/control.h
  E:/SendMedicalCar_1/SMC/IIC/OLED/OLED.h
  E:/SendMedicalCar_1/SMC/IIC/OLED/OLED_Data.h
  E:/SendMedicalCar_1/SMC/USART/usart.h

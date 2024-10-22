@@ -1,7 +1,7 @@
 #ifndef __CONTORL_H_
 #define __CONTORL_H_
 
-void Contorl_Init();
-void Contorl_Init();
+void Control_Init();
+void Control_task_Init();
 
 #endif // !__CONTORL_H_

@@ -1,6 +1,6 @@
 #include <control.h>
 
-void Contorl_Init()
+void Control_Init()
 {
     
 }
