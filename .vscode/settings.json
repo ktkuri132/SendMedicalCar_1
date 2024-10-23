@@ -6,6 +6,6 @@
         "pwm.h": "c"
     },
     "cmake.configureEnvironment": {
-        "PICO_SDK_PATH": "E:\\pico-sdk"
+        "PICO_SDK_PATH": "C:\\Users\\ktkuru\\Documents\\Pico SDK v1.5.1\\pico-sdk"
     }
 }

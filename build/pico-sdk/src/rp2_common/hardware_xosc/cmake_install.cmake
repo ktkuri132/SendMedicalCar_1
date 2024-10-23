@@ -1,4 +1,4 @@
-# Install script for directory: E:/pico-sdk/src/rp2_common/hardware_xosc
+# Install script for directory: C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_xosc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,6 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "E:/GNU_Tool_Arm_Embedded/bin/arm-none-eabi-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.3 rel1/bin/arm-none-eabi-objdump.exe")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/SendMedicalCar_1/build/pico-sdk/src/rp2_common/hardware_xosc/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()
