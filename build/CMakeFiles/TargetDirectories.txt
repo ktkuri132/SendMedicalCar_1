@@ -171,6 +171,9 @@ C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/CMakeFiles/run.dir
 C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/CMakeFiles/ELF2UF2Build.dir
 C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/CMakeFiles/edit_cache.dir
 C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/CMakeFiles/rebuild_cache.dir
+C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/SYS/CMakeFiles/sys.dir
+C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/SYS/CMakeFiles/edit_cache.dir
+C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/SYS/CMakeFiles/rebuild_cache.dir
 C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/IIC/CMakeFiles/i2c.dir
 C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/IIC/CMakeFiles/edit_cache.dir
 C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/IIC/CMakeFiles/rebuild_cache.dir

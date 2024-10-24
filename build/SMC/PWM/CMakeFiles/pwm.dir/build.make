@@ -701,6 +701,20 @@ SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/sr
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\PWM && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c" -o CMakeFiles\pwm.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
 
+SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: SMC/PWM/CMakeFiles/pwm.dir/flags.make
+SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: SMC/PWM/CMakeFiles/pwm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\PWM && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles\pwm.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj.d -o CMakeFiles\pwm.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj -c "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c"
+
+SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\PWM && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c" > CMakeFiles\pwm.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+
+SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\PWM && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c" -o CMakeFiles\pwm.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+
 # Object files for target pwm
 pwm_OBJECTS = \
 "CMakeFiles/pwm.dir/pwm.c.obj" \
@@ -748,7 +762,8 @@ pwm_OBJECTS = \
 "CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+"CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 
 # External object files for target pwm
 pwm_EXTERNAL_OBJECTS =
@@ -799,9 +814,10 @@ SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_
 SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/build.make
 SMC/PWM/libpwm.a: SMC/PWM/CMakeFiles/pwm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking CXX static library libpwm.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX static library libpwm.a"
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\PWM && $(CMAKE_COMMAND) -P CMakeFiles\pwm.dir\cmake_clean_target.cmake
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\PWM && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pwm.dir\link.txt --verbose=$(VERBOSE)
 

@@ -37,6 +37,7 @@ endif()
 
 #设置项目路径(被添加的文件夹中必须要有CMakeLists.txt文件)
 add_subdirectory(SMC/USER)
+add_subdirectory(SMC/SYS)
 add_subdirectory(SMC/IIC)
 add_subdirectory(SMC/USART)
 add_subdirectory(SMC/Control)

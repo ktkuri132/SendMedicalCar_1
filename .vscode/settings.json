@@ -3,7 +3,11 @@
         "main.h": "c",
         "control.h": "c",
         "usart.h": "c",
-        "pwm.h": "c"
+        "pwm.h": "c",
+        "stdlib.h": "c",
+        "oled.h": "c",
+        "stdarg.h": "c",
+        "timer.h": "c"
     },
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "C:\\Users\\ktkuru\\Documents\\Pico SDK v1.5.1\\pico-sdk"

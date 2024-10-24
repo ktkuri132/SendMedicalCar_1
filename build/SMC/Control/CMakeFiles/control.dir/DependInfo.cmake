@@ -122,6 +122,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/IIC/OLED/.."
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART"
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART/.."
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM/.."
+  "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS/.."
   )
 
 # The set of dependency files which are needed:

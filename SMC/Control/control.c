@@ -3,6 +3,10 @@
 void Control_Init()
 {
     
+    ENcoder_Init();
+    //开启定时器中断，5ms中断一次
+    add_repeating_timer_ms(5,Control_task_Init,NULL,NULL);
+
 }
 
 

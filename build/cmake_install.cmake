@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/pico-sdk/cmake_install.cmake")
   include("C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/cmake_install.cmake")
+  include("C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/SYS/cmake_install.cmake")
   include("C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/IIC/cmake_install.cmake")
   include("C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USART/cmake_install.cmake")
   include("C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/Control/cmake_install.cmake")

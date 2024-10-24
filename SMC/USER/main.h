@@ -7,4 +7,9 @@
 #include <control.h>
 #include <pwm.h>
 
+/*
+    定义通用接口
+*/
+
+
 #endif

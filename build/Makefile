@@ -233,6 +233,19 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
+# Target rules for targets named sys
+
+# Build rule for target.
+sys: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sys
+.PHONY : sys
+
+# fast build rule for target.
+sys/fast:
+	$(MAKE) $(MAKESILENT) -f SMC\SYS\CMakeFiles\sys.dir\build.make SMC/SYS/CMakeFiles/sys.dir/build
+.PHONY : sys/fast
+
+#=============================================================================
 # Target rules for targets named i2c
 
 # Build rule for target.
@@ -332,6 +345,7 @@ help:
 	@echo ... oled
 	@echo ... pwm
 	@echo ... run
+	@echo ... sys
 	@echo ... usart
 .PHONY : help
 

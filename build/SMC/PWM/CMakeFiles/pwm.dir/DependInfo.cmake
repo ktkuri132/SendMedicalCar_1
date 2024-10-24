@@ -105,6 +105,16 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2/include"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS/.."
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/IIC/.."
+  "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/IIC/OLED"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/IIC/OLED/.."
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART/.."
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control/.."
   )
 
 # The set of dependency files which are needed:
@@ -121,6 +131,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "SMC/PWM/CMakeFiles/pwm.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"

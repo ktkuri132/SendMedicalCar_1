@@ -40,6 +40,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -117,6 +118,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/common"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/include"
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/IIC/.."
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/IIC/OLED"
@@ -128,6 +130,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM"
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM/.."
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS/.."
   )
 
 # The set of dependency files which are needed:
@@ -180,6 +184,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/float_math.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
+  "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"

@@ -1,6 +1,9 @@
 #ifndef __CONTORL_H_
 #define __CONTORL_H_
 
+#include <sys.h>
+#include <pwm.h>
+
 void Control_Init();
 void Control_task_Init();
 

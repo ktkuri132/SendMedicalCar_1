@@ -9,13 +9,13 @@
                 "${workspaceFolder}/SMC/IIC/OLED/**",
                 "${workspaceFolder}/SMC/USART/**",
                 "${workspaceFolder}/SMC/PWM/**",
-                "${workspaceFolder}/SMC/Control/**",
-
+                "${workspaceFolder}/SMC/Control/**"
             ],
             "compilerPath": "E:\\GNU_Tool_Arm_Embedded\\bin\\arm-none-eabi-gcc.exe",
             "intelliSenseMode": "gcc-arm",
             "cStandard": "c99",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

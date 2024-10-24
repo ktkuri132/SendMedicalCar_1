@@ -1037,10 +1037,24 @@ SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/s
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c" -o CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
 
+SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: SMC/USER/CMakeFiles/run.dir/flags.make
+SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: SMC/USER/CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj.d -o CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj -c "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c"
+
+SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c" > CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+
+SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c" -o CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+
 SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: SMC/USER/CMakeFiles/run.dir/flags.make
 SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: SMC/USER/CMakeFiles/run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && C:\PROGRA~2\ARMGNU~1\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj.d -o CMakeFiles\run.dir\C_\Users\ktkuru\Documents\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj -c "C:\Users\ktkuru\Documents\Pico SDK v1.5.1\pico-sdk\src\rp2_common\hardware_i2c\i2c.c"
 
 SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1123,6 +1137,7 @@ run_OBJECTS = \
 "CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
+"CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" \
 "CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 
 # External object files for target run
@@ -1198,12 +1213,17 @@ SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/build.make
 SMC/USER/run.elf: SMC/IIC/libi2c.a
 SMC/USER/run.elf: SMC/USART/libusart.a
 SMC/USER/run.elf: SMC/Control/libcontrol.a
 SMC/USER/run.elf: SMC/PWM/libpwm.a
+SMC/USER/run.elf: SMC/SYS/libsys.a
+SMC/USER/run.elf: SMC/Control/libcontrol.a
+SMC/USER/run.elf: SMC/PWM/libpwm.a
+SMC/USER/run.elf: SMC/SYS/libsys.a
 SMC/USER/run.elf: SMC/IIC/libi2c.a
 SMC/USER/run.elf: SMC/IIC/OLED/liboled.a
 SMC/USER/run.elf: SMC/IIC/libi2c.a
@@ -1212,7 +1232,7 @@ SMC/USER/run.elf: SMC/USART/libusart.a
 SMC/USER/run.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/objects1.rsp
 SMC/USER/run.elf: SMC/USER/CMakeFiles/run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking CXX executable run.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable run.elf"
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\run.dir\link.txt --verbose=$(VERBOSE)
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && "C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\13.3 rel1\bin\arm-none-eabi-objcopy.exe" -Oihex C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/run.elf run.hex
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\SMC\USER && "C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\13.3 rel1\bin\arm-none-eabi-objcopy.exe" -Obinary C:/Users/ktkuru/Desktop/SendMedicalCar_1/build/SMC/USER/run.elf run.bin

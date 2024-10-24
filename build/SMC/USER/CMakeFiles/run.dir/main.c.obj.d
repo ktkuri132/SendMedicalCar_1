@@ -61,7 +61,15 @@ SMC/USER/CMakeFiles/run.dir/main.c.obj: \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~1\include/hardware/regs/i2c.h \
  C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\USART/usart.h \
  C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\Control/control.h \
+ C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\SYS/sys.h \
  C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\PWM/pwm.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\HA925D~1\include/hardware/pwm.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~2\include/hardware/structs/pwm.h \
- C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~1\include/hardware/regs/pwm.h
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~1\include/hardware/regs/pwm.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\PICO_M~4\include/pico/multicore.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/sync.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/sem.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/lock_core.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\HA2A15~1\include/hardware/sync.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/mutex.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/critical_section.h
