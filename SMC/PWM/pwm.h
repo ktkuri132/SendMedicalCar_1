@@ -9,7 +9,7 @@ void PWM_Init();
 void ENcoder_Init();
 void PWM_SetDuty(uint8_t motor, uint16_t duty);
 void encoder_interput_callback();
-void encoder_timer_callback();
+bool encoder_timer_callback();
 
 
 //PWM½Ó¿Ú

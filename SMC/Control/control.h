@@ -7,6 +7,8 @@
 void Control_Init();
 void Control_task_Init();
 
+//定义红外探测的接口
+#define HW201 6
 
 /*
     定义通用PID结构体

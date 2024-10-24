@@ -38,8 +38,8 @@ void PWM_Init()
 
     gpio_put(AIN_1,1);
     gpio_put(AIN_2,0);
-    gpio_put(BIN_1,1);
-    gpio_put(BIN_2,0);
+    gpio_put(BIN_1,0);
+    gpio_put(BIN_2,1);
 
 }
 
@@ -90,19 +90,20 @@ void encoder_interput_callback()
 
     if (current_A2 != last_A2) 
     {
-        encode1_count++;
+        encode2_count++;
     }
 
     last_A1 = current_A1;
     last_A2 = current_A2;
 }
 
-void encoder_timer_callback()
+bool encoder_timer_callback()
 {
     encode_1_speed = encode1_count;
     encode_2_speed = encode2_count;
 
     encode1_count = 0;
     encode2_count = 0;
+    return true;
 
 }

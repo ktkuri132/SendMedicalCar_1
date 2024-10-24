@@ -1826,8 +1826,8 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bu
 
 # All Build rule for target.
 SMC/USER/CMakeFiles/run.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-SMC/USER/CMakeFiles/run.dir/all: SMC/SYS/CMakeFiles/sys.dir/all
 SMC/USER/CMakeFiles/run.dir/all: SMC/USER/CMakeFiles/ELF2UF2Build.dir/all
+SMC/USER/CMakeFiles/run.dir/all: SMC/SYS/CMakeFiles/sys.dir/all
 SMC/USER/CMakeFiles/run.dir/all: SMC/IIC/CMakeFiles/i2c.dir/all
 SMC/USER/CMakeFiles/run.dir/all: SMC/USART/CMakeFiles/usart.dir/all
 	$(MAKE) $(MAKESILENT) -f SMC\USER\CMakeFiles\run.dir\build.make SMC/USER/CMakeFiles/run.dir/depend
