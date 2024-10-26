@@ -66,14 +66,12 @@ void core1_main()
     
     while (1) 
     {
-        
         OLED_Clear();
         OLED_Printf(0, 0,OLED_8X16, "Running...");
         OLED_Printf(0, 16,OLED_8X16, "speed_1:%d",encode_1_speed);
         OLED_Printf(0, 32,OLED_8X16, "speed_2:%d",encode_2_speed);
         OLED_Printf(0, 48,OLED_8X16, "Medical:%d",Medical);
         OLED_Update();
-        
     }
 }
 
