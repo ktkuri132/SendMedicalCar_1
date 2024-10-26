@@ -41,6 +41,9 @@ void PWM_Init()
     gpio_put(BIN_1,0);
     gpio_put(BIN_2,1);
 
+    PWM_SetDuty(MotorLeft, 0);
+    PWM_SetDuty(MotorRight, 0);
+
 }
 
 void PWM_SetDuty(uint8_t motor, uint16_t duty)

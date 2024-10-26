@@ -10,7 +10,7 @@ target_include_directories(run PUBLIC ${CMAKE_CURRENT_LIST_DIR}/..)
 target_link_libraries(run i2c usart control pwm sys)
 
 pico_enable_stdio_usb(run 1)
-pico_enable_stdio_uart(run 0)
+pico_enable_stdio_uart(run 1)
 
 #添加输出文件
 pico_add_extra_outputs(run)

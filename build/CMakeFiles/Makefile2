@@ -1832,7 +1832,7 @@ SMC/USER/CMakeFiles/run.dir/all: SMC/IIC/CMakeFiles/i2c.dir/all
 SMC/USER/CMakeFiles/run.dir/all: SMC/USART/CMakeFiles/usart.dir/all
 	$(MAKE) $(MAKESILENT) -f SMC\USER\CMakeFiles\run.dir\build.make SMC/USER/CMakeFiles/run.dir/depend
 	$(MAKE) $(MAKESILENT) -f SMC\USER\CMakeFiles\run.dir\build.make SMC/USER/CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target run"
 .PHONY : SMC/USER/CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1884,12 +1884,12 @@ SMC/USER/CMakeFiles/ELF2UF2Build.dir/clean:
 SMC/SYS/CMakeFiles/sys.dir/all: SMC/Control/CMakeFiles/control.dir/all
 	$(MAKE) $(MAKESILENT) -f SMC\SYS\CMakeFiles\sys.dir\build.make SMC/SYS/CMakeFiles/sys.dir/depend
 	$(MAKE) $(MAKESILENT) -f SMC\SYS\CMakeFiles\sys.dir\build.make SMC/SYS/CMakeFiles/sys.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=80,81,82,83,84,85,86,87,88,89 "Built target sys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles --progress-num=81,82,83,84,85,86,87,88,89 "Built target sys"
 .PHONY : SMC/SYS/CMakeFiles/sys.dir/all
 
 # Build rule for subdir invocation for target.
 SMC/SYS/CMakeFiles/sys.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles 70
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SMC/SYS/CMakeFiles/sys.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ktkuru\Desktop\SendMedicalCar_1\build\CMakeFiles 0
 .PHONY : SMC/SYS/CMakeFiles/sys.dir/rule

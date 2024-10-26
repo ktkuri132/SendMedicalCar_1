@@ -66,4 +66,9 @@ SMC/USER/CMakeFiles/run.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/s
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/mutex.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~2\include/pico/lock_core.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\HA2A15~1\include/hardware/sync.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\PICO_S~4\include/pico/stdio_uart.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\HAE181~1\include/hardware/uart.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~2\include/hardware/structs/uart.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~1\include/hardware/regs/uart.h \
+ C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~1\include/hardware/regs/dreq.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\PI24F1~1\include/pico/stdio_usb.h

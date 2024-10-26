@@ -8,10 +8,29 @@
         "oled.h": "c",
         "stdarg.h": "c",
         "timer.h": "c",
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "uart.h": "c"
     },
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "C:\\Users\\ktkuru\\Documents\\Pico SDK v1.5.1\\pico-sdk"
     },
-    "commentTranslate.hover.enabled": true
+    "commentTranslate.hover.enabled": true,
+    "MicroPython.executeButton": [
+        {
+            "text": "▶",
+            "tooltip": "运行",
+            "alignment": "left",
+            "command": "extension.executeFile",
+            "priority": 3.5
+        }
+    ],
+    "MicroPython.syncButton": [
+        {
+            "text": "$(sync)",
+            "tooltip": "同步",
+            "alignment": "left",
+            "command": "extension.execute",
+            "priority": 4
+        }
+    ]
 }
