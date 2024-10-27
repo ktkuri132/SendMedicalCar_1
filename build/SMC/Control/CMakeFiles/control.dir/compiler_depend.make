@@ -2796,6 +2796,7 @@ SMC/Control/CMakeFiles/control.dir/control.c.obj: C:/Users/ktkuru/Desktop/SendMe
   C:/Program\ Files\ (x86)/Arm\ GNU\ Toolchain\ arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   C:/Program\ Files\ (x86)/Arm\ GNU\ Toolchain\ arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
   C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM/pwm.h \
+  C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART/usart.h \
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/boards/include/boards/pico.h \
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
@@ -2854,6 +2855,7 @@ SMC/Control/CMakeFiles/control.dir/control_task.c.obj: C:/Users/ktkuru/Desktop/S
   C:/Program\ Files\ (x86)/Arm\ GNU\ Toolchain\ arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   C:/Program\ Files\ (x86)/Arm\ GNU\ Toolchain\ arm-none-eabi/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
   C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM/pwm.h \
+  C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART/usart.h \
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/boards/include/boards/pico.h \
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \

@@ -1550,6 +1550,7 @@ SMC/PWM/CMakeFiles/pwm.dir/pwm.c.obj: C:/Users/ktkuru/Desktop/SendMedicalCar_1/S
   C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
   C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM/pwm.h \
   C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/SYS/sys.h \
+  C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART/usart.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h
 
@@ -1803,6 +1804,8 @@ C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_irq
 C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
 
 C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c:
+
+C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/USART/usart.h:
 
 C:/Users/ktkuru/Documents/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c:
 

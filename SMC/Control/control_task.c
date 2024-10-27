@@ -18,7 +18,7 @@ void Task_Choose()
 {
     //编码器读值
     encoder_GetSign();
-    
+
     if(Medical==1)
     {
         goto start;
