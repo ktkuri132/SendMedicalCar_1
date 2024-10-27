@@ -72,7 +72,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control"
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control/.."
   "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control/../PWM"
-  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control/../U"
+  "C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control/../USART"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/common/pico_stdlib/include"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include"
   "C:/Users/ktkuru/Documents/Pico SDK v1.5.1/pico-sdk/src/common/pico_base/include"
