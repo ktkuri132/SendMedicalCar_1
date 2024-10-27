@@ -4,7 +4,7 @@ extern uint32_t Medical;
 
 //巡线的坐标的目标值
 #define Target_X_Site 0
-#define Target_Y_Site 1
+#define Target_Y_Site 0
 
 struct PID pid_test = {0,0,0,0,0,0,0,0,0,0,PID_Control};
 
