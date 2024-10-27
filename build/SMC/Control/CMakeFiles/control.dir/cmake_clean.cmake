@@ -128,6 +128,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/control.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "CMakeFiles/control.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
   "CMakeFiles/control.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
+  "CMakeFiles/control.dir/bsp.c.obj"
+  "CMakeFiles/control.dir/bsp.c.obj.d"
   "CMakeFiles/control.dir/control.c.obj"
   "CMakeFiles/control.dir/control.c.obj.d"
   "CMakeFiles/control.dir/control_task.c.obj"

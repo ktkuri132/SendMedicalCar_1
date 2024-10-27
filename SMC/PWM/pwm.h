@@ -6,10 +6,11 @@
 #include <sys.h>
 
 void PWM_Init();
-void ENcoder_Init();
+void Encoder_Port_Init();
 void PWM_SetDuty(uint8_t motor, uint16_t duty);
 void encoder_interput_callback();
-bool encoder_timer_callback();
+bool encoder_GetSign();
+
 
 
 //PWM½Ó¿Ú

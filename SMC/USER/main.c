@@ -9,65 +9,46 @@ extern uint32_t encode_1_speed,encode_2_speed;
 
 void core1_main();
 
-uint32_t Medical = 1;
+extern uint32_t Medical;
 extern uint8_t c;
 extern uint8_t Data[20][200],USART_array[20][200],UART_NOTE_LEN[20],Res_len,UART_LEN,Res_note,UART_NOTE;
 
 //主核心的main函数
 int main()
 {
-    //开启串口
+    //开启USB串口
     stdio_usb_init();
     
     //开启副核心
     multicore_launch_core1(core1_main);
-    //初始化OLED
-    
+    //初始化控制系统
+    Control_Init();
+    //初始化PWM
     PWM_Init();
     while (1) 
     {
         
-        //printf("Data[0] = %d\n", Data[0]);
-        if(Medical==-1)
-        {
-            
-        }
-        else if(Medical==1)
-        {
-            
-        }
         
     }
 }   
 
 
 
-void Medical_interput_callback()
-{
-    Medical = -Medical;
-}
+
 
 
 //副核心的main函数
 void core1_main() 
 {
     
-    //初始化编码器
-    ENcoder_Init();
+    
     //初始化OLED
     OLED_Init();
     //初始化串口
     USART_Init();
+    //编码器接口初始化
+    Encoder_Port_Init();
 
-    gpio_set_irq_enabled_with_callback(ENCODER_A1, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, 
-                                        true, encoder_interput_callback);
-    gpio_set_irq_enabled_with_callback(ENCODER_A2, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, 
-                                        true, encoder_interput_callback);
-    gpio_set_irq_enabled_with_callback(HW201, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, 
-                                        true,Medical_interput_callback);
-    struct repeating_timer timer;
-    add_repeating_timer_ms(5,encoder_timer_callback,NULL,&timer);
-    
     while (1) 
     {
         OLED_Clear();

@@ -1,15 +1,36 @@
 #include <control.h>
 
-void Control_Init()
+uint32_t Medical = 1;
+
+uint32_t   encode1_count;
+uint32_t   encode2_count;
+uint32_t    encode_1_speed;
+uint32_t    encode_2_speed;
+
+
+/// @brief 红外信号翻转
+void Medical_interput_callback()
 {
-    
-    ENcoder_Init();
-    //开启定时器中断，5ms中断一次
-    add_repeating_timer_ms(5,Control_task_Init,NULL,NULL);
+    Medical = -Medical;
+}
+
+/// @brief 读取编码器的值
+/// @return 
+bool encoder_GetSign()
+{
+    encode_1_speed = encode1_count;
+    encode_2_speed = encode2_count;
+
+    encode1_count = 0;
+    encode2_count = 0;
+    return true;
 
 }
 
-
+/// @brief 基本PID计算函数
+/// @param target 目标值
+/// @param current 当前值
+/// @param pid PID结构体对象
 void PID_Control(float target,float current,struct PID *pid)
 {
     

@@ -2,7 +2,7 @@ SMC/Control/CMakeFiles/control.dir/control_task.c.obj: \
  C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\Control\control_task.c \
  C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\Control/control.h \
  C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\SYS/sys.h \
- C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\PWM/pwm.h \
+ C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/PWM/pwm.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_S~1\include/pico/stdlib.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_B~1\include/pico.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\common\PICO_B~1\include/pico/types.h \

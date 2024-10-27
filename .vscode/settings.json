@@ -9,7 +9,8 @@
         "stdarg.h": "c",
         "timer.h": "c",
         "gpio.h": "c",
-        "uart.h": "c"
+        "uart.h": "c",
+        "sys.h": "c"
     },
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "C:\\Users\\ktkuru\\Documents\\Pico SDK v1.5.1\\pico-sdk"

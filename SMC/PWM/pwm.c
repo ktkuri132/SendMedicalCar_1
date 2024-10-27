@@ -1,6 +1,9 @@
 #include <pwm.h>
+#include <control.h>
 
 uint16_t wrap = 12500;
+
+
 
 void PWM_Init()
 {
@@ -53,31 +56,35 @@ void PWM_SetDuty(uint8_t motor, uint16_t duty)
 }
 
 //编码器接口初始化
-void ENcoder_Init()
+void Encoder_Port_Init()
 {
     gpio_init(ENCODER_A1);
     gpio_init(ENCODER_A2);
     gpio_init(ENCODER_B1);
     gpio_init(ENCODER_B2);
-
+    
     gpio_set_dir(ENCODER_A1, GPIO_IN);
     gpio_set_dir(ENCODER_A2, GPIO_IN);
     gpio_set_dir(ENCODER_B1, GPIO_IN);
     gpio_set_dir(ENCODER_B2, GPIO_IN);
-
+    
     gpio_pull_up(ENCODER_A1);
     gpio_pull_up(ENCODER_A2);
     gpio_pull_up(ENCODER_B1);
     gpio_pull_up(ENCODER_B2);
 
+    //产生编码器中断
+    gpio_set_irq_enabled_with_callback(ENCODER_A1, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, 
+                                        true, encoder_interput_callback);
+    gpio_set_irq_enabled_with_callback(ENCODER_A2, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, 
+                                        true, encoder_interput_callback);
+
 }
 
-uint32_t   encode1_count = 0;
-uint32_t   encode2_count = 0;
-uint32_t    encode_1_speed = 0;
-uint32_t    encode_2_speed = 0;
+extern uint32_t encode1_count;
+extern uint32_t encode2_count;
 
-//读取编码器的值
+//编码器扫描
 void encoder_interput_callback()
 {
     static bool last_A1 = false;
@@ -100,13 +107,3 @@ void encoder_interput_callback()
     last_A2 = current_A2;
 }
 
-bool encoder_timer_callback()
-{
-    encode_1_speed = encode1_count;
-    encode_2_speed = encode2_count;
-
-    encode1_count = 0;
-    encode2_count = 0;
-    return true;
-
-}

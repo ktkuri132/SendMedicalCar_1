@@ -1633,6 +1633,30 @@ C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id
 	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build && $(MAKE) $(MAKESILENT) -f SMC\Control\CMakeFiles\control.dir\build.make SMC/Control/CMakeFiles/control.dir/C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+bsp.obj: bsp.c.obj
+.PHONY : bsp.obj
+
+# target to build an object file
+bsp.c.obj:
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build && $(MAKE) $(MAKESILENT) -f SMC\Control\CMakeFiles\control.dir\build.make SMC/Control/CMakeFiles/control.dir/bsp.c.obj
+.PHONY : bsp.c.obj
+
+bsp.i: bsp.c.i
+.PHONY : bsp.i
+
+# target to preprocess a source file
+bsp.c.i:
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build && $(MAKE) $(MAKESILENT) -f SMC\Control\CMakeFiles\control.dir\build.make SMC/Control/CMakeFiles/control.dir/bsp.c.i
+.PHONY : bsp.c.i
+
+bsp.s: bsp.c.s
+.PHONY : bsp.s
+
+# target to generate assembly for a file
+bsp.c.s:
+	cd /d C:\Users\ktkuru\Desktop\SendMedicalCar_1\build && $(MAKE) $(MAKESILENT) -f SMC\Control\CMakeFiles\control.dir\build.make SMC/Control/CMakeFiles/control.dir/bsp.c.s
+.PHONY : bsp.c.s
+
 control.obj: control.c.obj
 .PHONY : control.obj
 
@@ -1878,6 +1902,9 @@ help:
 	@echo ... C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
 	@echo ... C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
 	@echo ... C_/Users/ktkuru/Documents/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
+	@echo ... bsp.obj
+	@echo ... bsp.i
+	@echo ... bsp.s
 	@echo ... control.obj
 	@echo ... control.i
 	@echo ... control.s

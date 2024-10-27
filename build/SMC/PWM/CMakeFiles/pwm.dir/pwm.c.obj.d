@@ -55,4 +55,5 @@ SMC/PWM/CMakeFiles/pwm.dir/pwm.c.obj: \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\RP2_CO~1\HA925D~1\include/hardware/pwm.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~2\include/hardware/structs/pwm.h \
  C:\Users\ktkuru\DOCUME~1\PICOSD~1.1\pico-sdk\src\rp2040\HARDWA~1\include/hardware/regs/pwm.h \
- C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\SYS/sys.h
+ C:\Users\ktkuru\Desktop\SendMedicalCar_1\SMC\SYS/sys.h \
+ C:/Users/ktkuru/Desktop/SendMedicalCar_1/SMC/Control/control.h

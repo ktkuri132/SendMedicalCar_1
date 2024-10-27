@@ -3,9 +3,18 @@
 
 #include <sys.h>
 #include <pwm.h>
+#include <usart.h>
 
 void Control_Init();
 void Control_task_Init();
+void Task_Choose();
+
+void HW_Port_Init();
+void Medical_interput_callback();
+
+//巡线的坐标
+#define X_Site USART_Deal(0)
+#define Y_Site USART_Deal(1)
 
 //定义红外探测的接口
 #define HW201 6
