@@ -34,7 +34,7 @@ int main()
 
 
 
-
+extern uint8_t UART_PATH_STRAT;
 
 
 //副核心的main函数
@@ -52,12 +52,29 @@ void core1_main()
     while (1) 
     {
         OLED_Clear();
-        OLED_Printf(0, 0,OLED_8X16, "Running...");
-        //OLED_Printf(0, 16,OLED_8X16, "Res:%c%c%c",Data[1][0],Data[1][1],Data[1][2]);
-        OLED_Printf(0, 32,OLED_8X16, "x:%d,y:%d",USART_Deal(0),USART_Deal(1));
-        //OLED_Printf(0, 32,OLED_8X16, "note:%d",UART_NOTE);
-        OLED_Printf(0,48,OLED_8X16,"Len:%d",UART_NOTE_LEN[1]);
-        //OLED_Printf(0, 48,OLED_8X16, "Medical:%d",Medical);
+
+        //检擦路径状态
+        switch (UART_PATH_STRAT)
+        {
+            case 1:
+                OLED_Clear();
+                OLED_Printf(0, 0,OLED_8X16, "ex:%d,ey:%d",USART_Deal(1),USART_Deal(2));
+                break;
+            case 2:
+                OLED_Clear();
+                OLED_Printf(0, 0,OLED_8X16, "cx:%d,cy:%d",USART_Deal(1),USART_Deal(2));
+                OLED_Printf(0,16,OLED_8X16,"mx:%d,my:%d",USART_Deal(3),USART_Deal(4));
+                OLED_Printf(0,32,OLED_8X16,"lx:%d,ly:%d",USART_Deal(5),USART_Deal(6));
+                break;
+
+            default:
+                break;
+        }
+
+    /*     OLED_Printf(0, 0,OLED_8X16, "rx:%d,ry:%d",USART_Deal(0),USART_Deal(1));
+        OLED_Printf(0, 16,OLED_8X16, "mx:%d,my:%d",USART_Deal(2),USART_Deal(3));
+        OLED_Printf(0,32,OLED_8X16,"lx:%d,ly:%d",USART_Deal(4),USART_Deal(5));*/
+        OLED_Printf(0,48,OLED_8X16,"PS:%d",UART_PATH_STRAT); 
         OLED_Update();
     }
 }

@@ -38,13 +38,16 @@ void uart0_irq_handler()
 uint8_t UART_Strat = 0;
 uint8_t UART_End = 0;
 
+uint8_t Res_Path_Strat = 0;    //路径状态检测标志位
+uint8_t UART_PATH_STRAT = 0;    //真实路径状态
+
 uint8_t Res_note = 0;  //数据节点
 uint8_t Res_len = 0;    //接收数据的下标
 
 uint8_t UART_NOTE = 0;  //本次数据节点
 uint8_t UART_LEN = 0;   //本次接收数据的长度
 
-uint8_t UART_NOTE_LEN[20];  //某次数据节点的长度
+uint8_t UART_NOTE_LEN[20];  //某次数据指定节点的数据长度
 
 void uart1_irq_handler()
 {
@@ -55,6 +58,7 @@ void uart1_irq_handler()
         if(c=='s')          //如果是开始字符
         {
             UART_Strat = 1;     //开始接收
+            Res_Path_Strat = 1;    //开始检测路径状态
             Res_len = 0;        //下标清零
             Res_note = 0;       //数据节点清零
             return;
@@ -81,6 +85,21 @@ void uart1_irq_handler()
         }
         else
         {
+            if(Res_Path_Strat)     //先检测路径状态
+            {
+                switch (c)
+                {
+                    //若是是寻直线状态，只接收直线的两个数据
+                    case '1':UART_PATH_STRAT=1;break;
+                    //若是扫到了十字路口
+                    case '2':UART_PATH_STRAT=2;break;
+                    
+                    default:break;
+                        
+                }
+                Res_Path_Strat=0;   //关闭路径状态检测
+            }
+
             if(UART_Strat)
             {
                 USART_array[Res_note][Res_len] = c;  //存储数据
@@ -92,10 +111,18 @@ void uart1_irq_handler()
 }
 
 
+
 /// @brief 处理串口数据针对于数字
 /// @param point_note 待处理的指定节点 
 uint8_t USART_Deal(uint8_t point_note)
 {
+    //检查是否越界
+    if(point_note > UART_NOTE)
+    {
+        return 0;
+    }
+
+
     uint8_t sum = 0;
     uint8_t len = UART_NOTE_LEN[point_note];
     
