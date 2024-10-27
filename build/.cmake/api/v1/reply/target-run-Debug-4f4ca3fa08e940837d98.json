@@ -1665,15 +1665,15 @@
 		},
 		{
 			"backtrace" : 3,
+			"id" : "usart::@b422715c895d80042fc8"
+		},
+		{
+			"backtrace" : 3,
 			"id" : "sys::@8a39e01df1df14125b74"
 		},
 		{
 			"backtrace" : 3,
 			"id" : "i2c::@fe21d34259498f6e63c0"
-		},
-		{
-			"backtrace" : 3,
-			"id" : "usart::@b422715c895d80042fc8"
 		}
 	],
 	"id" : "run::@42278c10e2d2894d971e",

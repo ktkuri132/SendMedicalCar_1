@@ -1351,11 +1351,11 @@
 		},
 		{
 			"backtrace" : 5,
-			"id" : "i2c::@fe21d34259498f6e63c0"
+			"id" : "usart::@b422715c895d80042fc8"
 		},
 		{
 			"backtrace" : 5,
-			"id" : "usart::@b422715c895d80042fc8"
+			"id" : "i2c::@fe21d34259498f6e63c0"
 		}
 	],
 	"id" : "pwm::@2803835c358d892c91f1",
