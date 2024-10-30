@@ -17,7 +17,8 @@
         "divider.h": "c",
         "pico.h": "c",
         "config.h": "c",
-        "ip_addr.h": "c"
+        "ip_addr.h": "c",
+        "stdio.h": "c"
     },
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "C:\\Users\\ktkuru\\Documents\\Pico SDK v1.5.1\\pico-sdk"
