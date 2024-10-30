@@ -1,8 +1,9 @@
-#include <pico/stdio.h>
+#include <pico/stdlib.h>
 #include <pico/cyw43_arch.h>
 
-void wifi_scan(void)
+void wifi_init()
 {
-    cyw43_t *cyw43 = cyw43_get();
-    cyw43_scan(cyw43);
-}
+    cyw43_init();
+    cyw43_connect("SSID", "PASSWORD");
+}   
+

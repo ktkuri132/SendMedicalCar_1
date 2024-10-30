@@ -1,0 +1,1 @@
+-I"E:/pico-sdk/lib/mbedtls/include" -I"E:/pico-sdk/lib/mbedtls/3rdparty/everest/include" -I"E:/pico-sdk/lib/mbedtls/library" -I"E:/pico-sdk/lib/mbedtls/3rdparty/everest/include/everest" -I"E:/pico-sdk/lib/mbedtls/3rdparty/everest/include/everest/kremlib" -I"E:/SendMedicalCar_1/build/_deps/picotool-build/lib/mbedtls/library"
