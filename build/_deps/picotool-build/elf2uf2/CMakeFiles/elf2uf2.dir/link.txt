@@ -1,2 +1,0 @@
-E:\mingw64\bin\ar.exe qc libelf2uf2.a CMakeFiles/elf2uf2.dir/elf2uf2.cpp.obj
-E:\mingw64\bin\ranlib.exe libelf2uf2.a

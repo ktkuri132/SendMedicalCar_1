@@ -1,1 +1,0 @@
--I"E:/SendMedicalCar_1/build/_deps/picotool-src/elf2uf2" -I"E:/SendMedicalCar_1/build/_deps/picotool-src/elf" -I"E:/SendMedicalCar_1/build/_deps/picotool-src/errors" -isystem "E:/pico-sdk/src/common/boot_uf2_headers/include"
