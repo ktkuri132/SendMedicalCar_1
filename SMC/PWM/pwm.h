@@ -28,13 +28,13 @@ bool encoder_GetSign();
 #define MotorRight PWMB
 
 //方向控制
-#define MotorLeftForward {AIN_1=0,AIN_2=1}
-#define MotorLeftBackward {AIN_1=1,AIN_2=0}
-#define MotorRightForward {BIN_1=0,BIN_2=1}
-#define MotorRightBackward {BIN_1=1,BIN_2=0}
-
-#define MotorLeftStop {AIN_1=0,AIN_2=0}
-#define MotorRightStop {BIN_1=0,BIN_2=0}
+#define LeftForward {gpio_put(AIN_1,1);gpio_put(AIN_2,0);}
+#define LeftBackward {gpio_put(AIN_1,0);gpio_put(AIN_2,1);}
+#define RightForward {gpio_put(BIN_1,0);gpio_put(BIN_2,1);}
+#define RightBackward {gpio_put(BIN_1,1);gpio_put(BIN_2,0);}
+#define AllForward {LeftForward;RightForward;}
+#define AllBackward {LeftBackward;RightBackward;}
+#define AllStop {gpio_put(AIN_1,0);gpio_put(AIN_2,0);gpio_put(BIN_1,0);gpio_put(BIN_2,0);}
 
 //编码器接口
 #define ENCODER_A1 18
@@ -48,8 +48,8 @@ bool encoder_GetSign();
 
 定义两个电机
 
-
 */
+
 
 
 

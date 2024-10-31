@@ -1,6 +1,5 @@
 #include <main.h>
-#include <pico/multicore.h>
-#include <hardware/timer.h>
+
 
 //这里验证一下是否能够正常调用
 extern struct PID pid_test;
@@ -12,6 +11,7 @@ void core1_main();
 extern uint32_t Medical;
 extern uint8_t c;
 extern uint8_t Data[20][200],USART_array[20][200],UART_NOTE_LEN[20],Res_len,UART_LEN,Res_note,UART_NOTE;
+extern uint8_t UART_DATA_TYPE;
 
 //主核心的main函数
 int main()
@@ -27,6 +27,37 @@ int main()
     PWM_Init();
     while (1) 
     {
+        if(UART_DATA_TYPE=='p')
+        {
+            uint8_t cmd = USART_Deal(1);
+            switch (cmd)
+            {
+                case 'w':
+                    AllForward;
+                    PWM_SetDuty(MotorLeft, 3000);
+                    PWM_SetDuty(MotorRight, 3000);
+                    break;
+                case 'S':
+                    AllStop;
+                    PWM_SetDuty(MotorLeft, 0);
+                    PWM_SetDuty(MotorRight, 0);
+                    break;
+                case 'a':
+                    LeftForward;
+                    RightBackward;
+                    PWM_SetDuty(MotorLeft, 2000);
+                    PWM_SetDuty(MotorRight, 2000);
+                    break;
+                case 'd':
+                    RightForward;
+                    LeftBackward;
+                    PWM_SetDuty(MotorLeft, 2000);
+                    PWM_SetDuty(MotorRight, 2000);
+                    break;
+                default:
+                    break;
+            }
+        }
         
         
     }
@@ -34,7 +65,7 @@ int main()
 
 
 
-extern uint8_t UART_PATH_STRAT;
+
 
 
 //副核心的main函数
@@ -53,8 +84,8 @@ void core1_main()
     {
         OLED_Clear();
 
-        //检擦路径状态
-        switch (UART_PATH_STRAT)
+        //检查数据格式
+        switch (UART_DATA_TYPE)
         {
             case 1:
                 OLED_Clear();
@@ -66,7 +97,9 @@ void core1_main()
                 OLED_Printf(0,16,OLED_8X16,"mx:%d,my:%d",USART_Deal(3),USART_Deal(4));
                 OLED_Printf(0,32,OLED_8X16,"lx:%d,ly:%d",USART_Deal(5),USART_Deal(6));
                 break;
-
+            case 'p':
+                OLED_Clear();
+                OLED_Printf(0, 0,OLED_8X16, "cmd:%c",USART_Deal(1));
             default:
                 break;
         }
@@ -74,7 +107,7 @@ void core1_main()
     /*     OLED_Printf(0, 0,OLED_8X16, "rx:%d,ry:%d",USART_Deal(0),USART_Deal(1));
         OLED_Printf(0, 16,OLED_8X16, "mx:%d,my:%d",USART_Deal(2),USART_Deal(3));
         OLED_Printf(0,32,OLED_8X16,"lx:%d,ly:%d",USART_Deal(4),USART_Deal(5));*/
-        OLED_Printf(0,48,OLED_8X16,"PS:%d",UART_PATH_STRAT); 
+        OLED_Printf(0,48,OLED_8X16,"DT:%d",UART_DATA_TYPE); 
         OLED_Update();
     }
 }

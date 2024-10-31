@@ -38,8 +38,8 @@ void uart0_irq_handler()
 uint8_t UART_Strat = 0;
 uint8_t UART_End = 0;
 
-uint8_t Res_Path_Strat = 0;    //路径状态检测标志位
-uint8_t UART_PATH_STRAT = 0;    //真实路径状态
+uint8_t Res_Data_type = 0;    //数据格式检测标志位
+uint8_t UART_DATA_TYPE = 0;    //真实数据格式
 
 uint8_t Res_note = 0;  //数据节点
 uint8_t Res_len = 0;    //接收数据的下标
@@ -49,6 +49,12 @@ uint8_t UART_LEN = 0;   //本次接收数据的长度
 
 uint8_t UART_NOTE_LEN[20];  //某次数据指定节点的数据长度
 
+void CMD_Callback()
+{
+    //处理命令
+}
+
+// 串口1中断处理函数：检测数据格式，接收数据
 void uart1_irq_handler()
 {
     //判断是否是接收中断
@@ -58,7 +64,7 @@ void uart1_irq_handler()
         if(c=='s')          //如果是开始字符
         {
             UART_Strat = 1;     //开始接收
-            Res_Path_Strat = 1;    //开始检测路径状态
+            Res_Data_type = 1;    //开始检测数据格式
             Res_len = 0;        //下标清零
             Res_note = 0;       //数据节点清零
             return;
@@ -85,22 +91,30 @@ void uart1_irq_handler()
         }
         else
         {
-            if(Res_Path_Strat)     //先检测路径状态
+            if(Res_Data_type)     //先检测数据格式
             {
                 switch (c)
                 {
                     //若是是寻直线状态，只接收直线的两个数据
-                    case '1':UART_PATH_STRAT=1;break;
+                    case '1':UART_DATA_TYPE=1;break;
                     //若是扫到了十字路口
-                    case '2':UART_PATH_STRAT=2;break;
+                    case '2':UART_DATA_TYPE=2;break;
                     
+                    // 其他数据格式......
+
+                    // 检测：命令数据格式
+                    case 'p':
+                        UART_DATA_TYPE='p';
+                        CMD_Callback();
+                    break;
+
                     default:break;
                         
                 }
-                Res_Path_Strat=0;   //关闭路径状态检测
+                Res_Data_type=0;   //关闭数据格式检测
             }
 
-            if(UART_Strat)
+            if(UART_Strat)      // 开始接收后，数组的第一个位置存储的是数据格式，读数据要从第二个位置开始
             {
                 USART_array[Res_note][Res_len] = c;  //存储数据
                 Res_len++;     //下标加1
@@ -128,8 +142,17 @@ uint8_t USART_Deal(uint8_t point_note)
     
     for (uint8_t i = 0; i < len; i++)
     {
-        sum = sum * 10 + (Data[point_note][i] - '0');
+        uint8_t temp_target = Data[point_note][i];
+        // 判断临时目标数据的ascll码值
+        if(!(temp_target >= '0' && temp_target <= '9'))     //如果不是数字字符
+        {
+            return temp_target;         //直接返回
+        }
+        
+
+        sum = sum * 10 + (temp_target - '0');
     }
 
     return sum;
 }
+

@@ -12,15 +12,14 @@ void Task_Choose();
 void HW_Port_Init();
 void Medical_interput_callback();
 
-//Ñ²ÏßµÄ×ø±ê
-#define X_Site USART_Deal(0)
-#define Y_Site USART_Deal(1)
+uint32_t (*PATH_Start_Check())[2];
 
-//¶¨ÒåºìÍâÌ½²âµÄ½Ó¿Ú
+
+//å®šä¹‰çº¢å¤–æ¢æµ‹çš„æ¥å£
 #define HW201 6
 
 /*
-    ¶¨ÒåÍ¨ÓÃPID½á¹¹Ìå
+    å®šä¹‰é€šç”¨PIDç»“æ„ä½“
 */
 typedef struct PID
 {
