@@ -1,14 +1,9 @@
-#ifdef __cplusplus
 extern "C" {
-#endif
 
 #include <control.h>
 
-
-
-#ifdef __cplusplus
 }
-#endif
+
 
 #include <pid.h>
 

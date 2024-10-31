@@ -28,27 +28,6 @@ bool encoder_GetSign()
 
 }
 
-/// @brief 基本PID计算函数
-/// @param target 目标值
-/// @param current 当前值
-/// @param pid PID结构体对象
-void PID_Control(float target,float current,struct PID *pid)
-{
-    
-    pid->error = target - current;
-    pid->integral += pid->error;
-    pid->derivative = pid->error - pid->error_last;
-
-    // Integral windup guard
-    if (pid->integral > pid->integral_max) {
-        pid->integral = pid->integral_max;
-    } else if (pid->integral < pid->integral_min) {
-        pid->integral = pid->integral_min;
-    }
-
-    pid->output = pid->kp * pid->error + pid->ki * pid->integral + pid->kd * pid->derivative;
-    pid->error_last = pid->error;
-}
 
 /// @brief 路径状态检查
 uint32_t (*PATH_Start_Check())[2]

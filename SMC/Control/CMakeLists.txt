@@ -1,4 +1,4 @@
-add_library(control control.c control_task.c bsp.c pid.cpp)
+add_library(control control.cpp control_task.cpp bsp.c pid.cpp)
 
 target_include_directories(control PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 target_include_directories(control PUBLIC ${CMAKE_CURRENT_LIST_DIR}/..)
