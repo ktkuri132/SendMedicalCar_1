@@ -2,6 +2,10 @@
 #define __OLED_H_
 #define __OLED_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <OLED_Data.h>
 #include <stdarg.h>
 
@@ -66,5 +70,10 @@ void OLED_DrawTriangle(int16_t X0, int16_t Y0, int16_t X1, int16_t Y1, int16_t X
 void OLED_DrawCircle(int16_t X, int16_t Y, uint8_t Radius, uint8_t IsFilled);
 void OLED_DrawEllipse(int16_t X, int16_t Y, uint8_t A, uint8_t B, uint8_t IsFilled);
 void OLED_DrawArc(int16_t X, int16_t Y, uint8_t Radius, int16_t StartAngle, int16_t EndAngle, uint8_t IsFilled);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

@@ -8,17 +8,17 @@ extern "C" {
 #include <pid.h>
 
 
-int __PID::__pid_test()
+int PID::pid_test()
 {
 
 }
 
-__PID::__PID(/* args */)
+PID::PID(/* args */)
 {
     this->error = this->target - this->feedback;
 }
 
-__PID::~__PID()
+PID::~PID()
 {
 
 }

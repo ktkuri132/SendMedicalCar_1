@@ -18,7 +18,11 @@
         "pico.h": "c",
         "config.h": "c",
         "ip_addr.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "pid.h": "c",
+        "multicore.h": "c",
+        "oled_data.h": "c",
+        "iostream": "cpp"
     },
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "C:\\Users\\ktkuru\\Documents\\Pico SDK v1.5.1\\pico-sdk"

@@ -3,6 +3,11 @@
 
 #include <pico/stdlib.h>
 #include <hardware/pwm.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <sys.h>
 
 void PWM_Init();
@@ -13,21 +18,21 @@ bool encoder_GetSign();
 
 
 
-//PWM½Ó¿Ú
+//PWMæ¥å£
 #define PWMA 22
 #define PWMB 20
 
-//·½ÏòÊ¹ÄÜ½Ó¿Ú
+//æ–¹å‘ä½¿èƒ½æ¥å£
 #define AIN_2 26
 #define AIN_1 16
 #define BIN_1 17
 #define BIN_2 21
 
-//PWM¶ş´Î½Ó¿Ú
+//PWMäºŒæ¬¡æ¥å£
 #define MotorLeft PWMA
 #define MotorRight PWMB
 
-//·½Ïò¿ØÖÆ
+//æ–¹å‘æ§åˆ¶
 #define LeftForward {gpio_put(AIN_1,1);gpio_put(AIN_2,0);}
 #define LeftBackward {gpio_put(AIN_1,0);gpio_put(AIN_2,1);}
 #define RightForward {gpio_put(BIN_1,0);gpio_put(BIN_2,1);}
@@ -36,7 +41,7 @@ bool encoder_GetSign();
 #define AllBackward {LeftBackward;RightBackward;}
 #define AllStop {gpio_put(AIN_1,0);gpio_put(AIN_2,0);gpio_put(BIN_1,0);gpio_put(BIN_2,0);}
 
-//±àÂëÆ÷½Ó¿Ú
+//ç¼–ç å™¨æ¥å£
 #define ENCODER_A1 18
 #define ENCODER_A2 19
 #define ENCODER_B1 29
@@ -44,13 +49,15 @@ bool encoder_GetSign();
 
 /*
 
-¹ØÓÚĞ¡³µ1µÄPWM¿ØÖÆ
+å…³äºå°è½¦1çš„PWMæ§åˆ¶
 
-¶¨ÒåÁ½¸öµç»ú
+å®šä¹‰ä¸¤ä¸ªç”µæœº
 
 */
 
-
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif // !__PWM_H_

@@ -1,6 +1,5 @@
 #include <main.h>
 
-
 //这里验证一下是否能够正常调用
 extern struct PID pid_test;
 extern uint32_t encode1_count,encode2_count;
@@ -17,7 +16,7 @@ extern uint8_t UART_DATA_TYPE;
 int main()
 {
     //开启USB串口
-    stdio_usb_init();
+    stdio_init_all();
     
     //开启副核心
     multicore_launch_core1(core1_main);
@@ -27,6 +26,7 @@ int main()
     PWM_Init();
     while (1) 
     {
+        
         if(UART_DATA_TYPE=='p')
         {
             uint8_t cmd = USART_Deal(1);

@@ -1,5 +1,5 @@
 #声明可执行文件与参与编译的文件
-add_executable(run main.c)
+add_executable(run main.cpp)
 
 #添加链接库
 target_link_libraries(run pico_stdlib pico_multicore hardware_uart)

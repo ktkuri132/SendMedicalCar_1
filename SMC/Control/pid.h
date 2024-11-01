@@ -4,7 +4,7 @@
 #ifdef __cplusplus
 
 
-class __PID
+class PID
 {
 private:
     /* data */
@@ -20,9 +20,9 @@ public:
     float kp;
     float ki;
     float kd;
-    int __pid_test();
-    __PID(/* args */);
-    ~__PID();
+    int pid_test();
+    PID(/* args */);
+    ~PID();
 };
 
 

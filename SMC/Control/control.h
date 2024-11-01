@@ -2,6 +2,9 @@
 #define __CONTORL_H_
 
 #ifdef __cplusplus
+
+#include <pid.h>
+
 extern "C" {
 #endif
 

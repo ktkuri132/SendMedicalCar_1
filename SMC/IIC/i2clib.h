@@ -5,7 +5,9 @@
 #include <pico/types.h>
 #include <hardware/i2c.h>
 
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**********************************更改下面的端口****************************** */
 
@@ -18,5 +20,8 @@ uint8_t IIC_WriteCommand(i2c_inst_t *I2C_PORT,uint8_t ADDRESS,uint16_t Command_M
 uint8_t IIC_WriteData(i2c_inst_t *I2C_PORT,uint8_t ADDRESS,uint16_t Data_Mode, uint8_t *Data,uint8_t Count);
 uint8_t IIC_ReadData(i2c_inst_t *I2C_PORT,uint8_t ADDRESS,uint16_t Data_Mode, uint8_t *Data,uint8_t Count);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

@@ -2,16 +2,17 @@
 #define __MAIN_H_
 
 #ifdef __cplusplus
-extern "C" {
-#endif
 
+#include <control.h>
 #include <pico/stdlib.h>
 #include <pico/multicore.h>
 #include <hardware/timer.h>
 
+extern "C" {
+#endif
+
 #include <OLED.h>
 #include <usart.h>  
-#include <control.h>
 #include <pwm.h>
 
 #ifdef __cplusplus
