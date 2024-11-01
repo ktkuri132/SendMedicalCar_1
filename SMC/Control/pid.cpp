@@ -1,24 +1,18 @@
-extern "C" {
-
-#include <control.h>
-
-}
-
-
 #include <pid.h>
 
 
-int PID::pid_test()
-{
-
-}
-
-PID::PID(/* args */)
+float PID_Control::PID_Update()
 {
     this->error = this->target - this->feedback;
+    
 }
 
-PID::~PID()
+PID_Control::PID_Control(/* args */)
+{
+    
+}
+
+PID_Control::~PID_Control()
 {
 
 }

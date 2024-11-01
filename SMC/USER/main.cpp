@@ -26,7 +26,7 @@ int main()
     while (1) 
     {
         
-        if(UART_DATA_TYPE=='p')
+        if(UART_DATA_TYPE==5)
         {
             uint8_t cmd = USART_Deal(1);
             switch (cmd)

@@ -3,7 +3,7 @@
 
 #ifdef __cplusplus
 
-#include <control.h>
+#include <control.hpp>
 #include <pico/stdlib.h>
 #include <pico/multicore.h>
 #include <hardware/timer.h>

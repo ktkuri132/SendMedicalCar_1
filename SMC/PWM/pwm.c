@@ -1,5 +1,5 @@
 #include <pwm.h>
-#include <control.h>
+#include <control.hpp>
 
 uint16_t wrap = 12500;
 

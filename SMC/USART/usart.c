@@ -104,7 +104,7 @@ void uart1_irq_handler()
 
                     // 检测：命令数据格式
                     case 'p':
-                        UART_DATA_TYPE='p';
+                        UART_DATA_TYPE=5;
                         CMD_Callback();
                     break;
 
