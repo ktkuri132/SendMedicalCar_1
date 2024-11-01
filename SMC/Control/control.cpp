@@ -43,15 +43,22 @@ uint32_t (*Control::PATH_Start_Check())[3]
 
 Line_Control::Line_Control()
 {
-    Obj_ForPIDLineControl = new class PID_Control;
-    Obj_ForPIDLineControl->kp = 0.1;
-    Obj_ForPIDLineControl->ki = 0.1;
-    Obj_ForPIDLineControl->kd = 0.1;
+    // 设置目标值
+    PID_Control::target = Target_X_Site;
+
+    // 设置PID参数
+    PID_Control::kp = 500;
+    PID_Control::ki = 0;
+    PID_Control::kd = 120;
+
+    // 设置输出限幅，积分限幅
+    PID_Control::max_Output = 1000;
+    PID_Control::max_integral = 1000;
 }
 
 Line_Control::~Line_Control()
 {
-    delete Obj_ForPIDLineControl;
+    
 }
 
 
@@ -60,13 +67,10 @@ Line_Control::~Line_Control()
 
 Turn_Control::Turn_Control()
 {
-    Obj_ForPIDTurnControl = new class PID_Control;
-    Obj_ForPIDTurnControl->kp = 0.1;
-    Obj_ForPIDTurnControl->ki = 0.1;
-    Obj_ForPIDTurnControl->kd = 0.1;
+   
 }
 
 Turn_Control::~Turn_Control()
 {
-    delete Obj_ForTurnControl;
+    
 }

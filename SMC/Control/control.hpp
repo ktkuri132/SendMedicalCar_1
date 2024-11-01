@@ -4,6 +4,11 @@
 #include <control.hpp>
 #include <pid.h>
 
+
+//巡线的坐标的目标值
+#define Target_X_Site 118
+#define Target_Y_Site 0
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,7 +35,7 @@ void Medical_interput_callback();
 #ifdef __cplusplus
 
 
-// 前向声明PID类
+// 前向声明
 class PID_Control;
 class Line_Control;
 class Turn_Control;
@@ -55,28 +60,72 @@ public:
     
 };
 
+/// @brief 定义PID类，继承控制类
+class PID_Control :public Control
+{
+private:
+    /* data */
+    float error;
+    float error_last;
 
+    float integral;
+    float derivative;
 
-/// @brief 定义直线线控制类，继承控制类
-class Line_Control : public Control
+public:
+    float target;
+    float feedback;
+
+    // 输出限幅
+    float max_Output;
+    // 积分限幅
+    float max_integral;
+
+    float kp;
+    float ki;
+    float kd;
+
+    float OutPut;
+    float PID_Update();
+    PID_Control(/* args */);
+    ~PID_Control();
+};
+
+/// @brief 定义直线控制类，继承PID类
+class Line_Control : public PID_Control
 {
 
 private:
 
 public:
-    PID_Control* Obj_ForPIDLineControl;
-    uint32_t OutPut;
     Line_Control(/* args */);
     ~Line_Control();
 
+    uint32_t OutPut;
+    
     float Put_PWM()
-    {
-        this->OutPut =  uint32_t(Obj_ForPIDLineControl->PID_Update());
+    {   
+        PID_Control::feedback = Control::PATH_Site[0][1];
+        PID_Control::PID_Update();
+
+        if(PID_Control::OutPut>0)
+        {
+            AllForward;
+            this->OutPut = (uint32_t)PID_Control::OutPut;
+        }
+        else if(PID_Control::OutPut<0)
+        {
+            AllBackward;
+            this->OutPut = (uint32_t)(-PID_Control::OutPut);
+        }
+
+        PWM_SetDuty(MotorLeft, this->OutPut);
+        PWM_SetDuty(MotorRight, this->OutPut);
     }
 
 };
 
-class Turn_Control : public Control
+/// @brief 定义转向控制类，继承PID类
+class Turn_Control : public PID_Control
 {
 private:
     /* data */
@@ -88,33 +137,7 @@ public:
 };
 
 
-/// @brief 定义PID类，继承控制类
-class PID_Control : public Line_Control,Turn_Control
-{
-private:
-    /* data */
-    float error;
-    float error_last;
 
-    
-
-    float integral;
-    float derivative;
-    // 输出限幅
-    float max_Output;
-    // 积分限幅
-    float max_integral;
-public:
-    float target;
-    float feedback;
-
-    float kp;
-    float ki;
-    float kd;
-    float PID_Update();
-    PID_Control(/* args */);
-    ~PID_Control();
-};
 
 #endif
 
