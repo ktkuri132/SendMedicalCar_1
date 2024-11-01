@@ -1,5 +1,4 @@
 #include <main.h>
-
 //这里验证一下是否能够正常调用
 extern struct PID pid_test;
 extern uint32_t encode1_count,encode2_count;
