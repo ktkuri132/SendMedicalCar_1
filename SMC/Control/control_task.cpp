@@ -11,9 +11,15 @@ extern uint32_t Medical;
 void Task_Choose()
 {
     static Control control;     //定义控制类对象,初始化了所有子类对象
+    Line_Control Obj_ForLineControl;
+    Turn_Control Obj_ForTurnControl;
+
+    //static int a;
     // 获取当前位置信息
     control.PATH_Site = control.PATH_Start_Check();
-    
+    //OLED_Clear();
+    //OLED_Printf(0,0,OLED_6X8,"time:%d",a++);
+    //OLED_Update();
     //编码器读值
     encoder_GetSign();
 
@@ -31,10 +37,11 @@ stop:
     return;
 
 start:
+
     switch (control.PATH_Site[0][0])
     {
         case 1:
-            control.Obj_ForLineControl->Put_PWM();
+            Obj_ForLineControl.Put_PWM();
             break;
         case 2:
             

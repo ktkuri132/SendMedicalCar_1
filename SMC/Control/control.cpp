@@ -7,14 +7,12 @@ extern uint8_t UART_DATA_TYPE;
 /// @brief 控制系统初始化
 Control::Control()
 {   
-    Obj_ForLineControl = new Line_Control;
-    Obj_ForTurnControl = new Turn_Control;
+    
 }
 
 Control::~Control()
 {
-    delete Obj_ForLineControl;
-    delete Obj_ForTurnControl;
+  
 }
 
 /// @brief 路径状态检查
@@ -39,6 +37,9 @@ uint32_t (*Control::PATH_Start_Check())[3]
     return &Site;
 }
 
+
+#ifdef __Other_Control_
+
 //**********************************直线控制类********************************* */
 
 Line_Control::Line_Control()
@@ -52,8 +53,8 @@ Line_Control::Line_Control()
     PID_Control::kd = 120;
 
     // 设置输出限幅，积分限幅
-    PID_Control::max_Output = 1000;
-    PID_Control::max_integral = 1000;
+    PID_Control::max_Output = 12500;
+    PID_Control::max_integral = 5000;
 }
 
 Line_Control::~Line_Control()
@@ -74,3 +75,5 @@ Turn_Control::~Turn_Control()
 {
     
 }
+
+#endif

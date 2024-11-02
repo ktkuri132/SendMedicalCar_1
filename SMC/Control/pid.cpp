@@ -1,6 +1,8 @@
 #include <pid.h>
 #include <control.hpp>
 
+#ifdef __PID_Control_
+
 float PID_Control::PID_Update()
 {
     this->error = this->target - this->feedback;
@@ -36,12 +38,12 @@ float PID_Control::PID_Update()
 
 PID_Control::PID_Control(/* args */)
 {
-    Obj_ForLineControl = new Line_Control;
-    Obj_ForTurnControl = new Turn_Control;
+    
 }
 
 PID_Control::~PID_Control()
 {
-    delete Obj_ForLineControl;
-    delete Obj_ForTurnControl;
+   
 }
+
+#endif

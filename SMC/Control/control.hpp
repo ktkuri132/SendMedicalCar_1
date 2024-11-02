@@ -4,6 +4,8 @@
 #include <control.hpp>
 #include <pid.h>
 
+#define __Other_Control_
+#define __PID_Control_
 
 //巡线的坐标的目标值
 #define Target_X_Site 118
@@ -13,6 +15,7 @@
 extern "C" {
 #endif
 
+#include <OLED.h>
 #include <sys.h>
 #include <pwm.h>
 #include <usart.h>
@@ -60,6 +63,8 @@ public:
     
 };
 
+#ifdef __PID_Control_
+
 /// @brief 定义PID类，继承控制类
 class PID_Control :public Control
 {
@@ -89,6 +94,10 @@ public:
     PID_Control(/* args */);
     ~PID_Control();
 };
+
+#endif
+
+#ifdef __Other_Control_
 
 /// @brief 定义直线控制类，继承PID类
 class Line_Control : public PID_Control
@@ -136,7 +145,7 @@ public:
     ~Turn_Control();
 };
 
-
+#endif
 
 
 #endif

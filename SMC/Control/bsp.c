@@ -30,6 +30,23 @@ bool encoder_GetSign()
 
 }
 
+void temp_callback()
+{
+    static a=1;
+    if(a)
+    {
+        a=0;
+        PWM_SetDuty(MotorLeft, 0);
+        PWM_SetDuty(MotorRight, 0);
+    }
+    else
+    {
+        a=1;
+        PWM_SetDuty(MotorLeft, 3000);
+    }
+}
+
+
 /// @brief 控制系统初始化
 void Control_Init()
 {
@@ -50,3 +67,5 @@ void HW_Port_Init()
     gpio_set_dir(HW201, GPIO_IN);
     gpio_pull_up(HW201);
 }
+
+

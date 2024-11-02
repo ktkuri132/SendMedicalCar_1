@@ -78,7 +78,11 @@ void core1_main()
     USART_Init();
     //编码器接口初始化
     Encoder_Port_Init();
-
+    while (0)
+    {
+        /* code */
+    }
+    
     while (1) 
     {
         OLED_Clear();
