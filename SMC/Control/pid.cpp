@@ -4,9 +4,11 @@
 float PID_Control::PID_Update()
 {
     this->error = this->target - this->feedback;
-    this->integral += this->error;  //积分
-    this->derivative = this->error - this->error_last;  //微分
-
+    //积分
+    this->integral += this->error;  
+    this->integral *= this->ki;
+    //微分
+    this->derivative = this->error - this->error_last;  
     // 积分限幅
     if(this->integral > this->max_integral)
     {
@@ -18,7 +20,7 @@ float PID_Control::PID_Update()
     }
 
     // 输出限幅
-    this->OutPut = this->kp * this->error + this->ki * this->integral + this->kd * this->derivative;
+    this->OutPut = this->kp * this->error + this->integral + this->kd * this->derivative;
     if(this->OutPut > this->max_Output)
     {
         this->OutPut = this->max_Output;
@@ -27,6 +29,7 @@ float PID_Control::PID_Update()
     {
         this->OutPut = -this->max_Output;
     }
+    //更新误差
     this->error_last = this->error;
     
 }

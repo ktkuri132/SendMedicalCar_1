@@ -126,7 +126,7 @@ void uart1_irq_handler()
 
 
 
-/// @brief 处理串口数据针对于数字
+/// @brief 处理指定节点的串口数据
 /// @param point_note 待处理的指定节点 
 uint8_t USART_Deal(uint8_t point_note)
 {

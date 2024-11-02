@@ -10,7 +10,7 @@ extern uint32_t Medical;
 /// @brief 任务选择
 void Task_Choose()
 {
-    static Control control;
+    static Control control;     //定义控制类对象,初始化了所有子类对象
     // 获取当前位置信息
     control.PATH_Site = control.PATH_Start_Check();
     
