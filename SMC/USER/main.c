@@ -17,8 +17,9 @@ extern uint8_t UART_DATA_TYPE;
 int main()
 {
     //开启USB串口
-    stdio_usb_init();
+    stdio_init_all();
     
+    LED_Init();
     //开启副核心
     multicore_launch_core1(core1_main);
     //初始化控制系统
@@ -30,6 +31,7 @@ int main()
         if(UART_DATA_TYPE=='p')
         {
             uint8_t cmd = USART_Deal(1);
+            
             switch (cmd)
             {
                 case 'w':

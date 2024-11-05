@@ -136,7 +136,6 @@ uint8_t USART_Deal(uint8_t point_note)
         return 0;
     }
 
-
     uint8_t sum = 0;
     uint8_t len = UART_NOTE_LEN[point_note];
     

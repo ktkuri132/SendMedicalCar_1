@@ -26,3 +26,11 @@ void HW_Port_Init()
     gpio_set_dir(HW201, GPIO_IN);
     gpio_pull_up(HW201);
 }
+ 
+
+void LED_Init()
+{
+    gpio_init(25);
+    gpio_set_dir(25, GPIO_OUT);
+    gpio_put(25,0);
+}
