@@ -95,6 +95,7 @@ void uart1_irq_handler()
             {
                 switch (c)
                 {
+                    case '6':UART_DATA_TYPE=6;break;
                     //若是是寻直线状态，只接收直线的两个数据
                     case '1':UART_DATA_TYPE=1;break;
                     //若是扫到了十字路口
@@ -128,7 +129,7 @@ void uart1_irq_handler()
 
 /// @brief 处理串口数据针对于数字
 /// @param point_note 待处理的指定节点 
-uint8_t USART_Deal(uint8_t point_note)
+uint16_t USART_Deal(uint8_t point_note)
 {
     //检查是否越界
     if(point_note > UART_NOTE)
@@ -136,7 +137,7 @@ uint8_t USART_Deal(uint8_t point_note)
         return 0;
     }
 
-    uint8_t sum = 0;
+    uint16_t sum = 0;
     uint8_t len = UART_NOTE_LEN[point_note];
     
     for (uint8_t i = 0; i < len; i++)

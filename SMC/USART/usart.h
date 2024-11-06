@@ -6,6 +6,6 @@
 #include <hardware/uart.h>
 
 void USART_Init();
-uint8_t USART_Deal(uint8_t point_note);
+uint16_t USART_Deal(uint8_t point_note);
 
 #endif

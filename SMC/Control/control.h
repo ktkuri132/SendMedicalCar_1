@@ -7,7 +7,11 @@
 
 void LED_Init();
 void Mode_Chose();
+
+
 void Line_Control();
+void Turn_Control();
+
 void Control_Init();
 void Control_task_Init();
 void Task_Choose();

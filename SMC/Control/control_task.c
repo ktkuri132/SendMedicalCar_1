@@ -2,7 +2,7 @@
 
 extern uint32_t Medical;
 
-
+extern uint8_t UART_DATA_TYPE;
 
 
 
@@ -14,12 +14,31 @@ void Control_task_Init()
     //pid_test.PID_Control(0,0,&pid_test);
 }
 
+void Mode_test()
+{
+    if(UART_DATA_TYPE==6)
+    {
+        AllStop
+    }
+    else if(UART_DATA_TYPE==1)
+    {
+        Line_Control();
+    }
+    else if(UART_DATA_TYPE==2)
+    {
+        Turn_Control();
+    }
+    else
+    {
+        //Medical_interput_callback();
+    }
+}
+
 /// @brief 任务选择
 void Task_Choose()
 {
     //Mode_Chose();
-    
-    printf("%d,",Medical);
-    Line_Control();
+    Mode_test();
+    //printf("%d,",Medical);
 
 }

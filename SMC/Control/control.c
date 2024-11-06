@@ -69,7 +69,7 @@ uint32_t (*PATH_Start_Check())[3]
 /// @brief 基础电机装载
 /// @param Motor_Left 左
 /// @param Motor_Right 右
-void Motor_Bash_Load(float Motor_Left,float Motor_Right)
+void Motor_Load(float Motor_Left,float Motor_Right)
 {
     if(Motor_Left>=0)
     {   
@@ -97,12 +97,14 @@ void Motor_Bash_Load(float Motor_Left,float Motor_Right)
 /// @brief 巡线控制
 void Line_Control()
 {
-    static struct PID pid_left = {300,0,0,7000,12500,PID_Control};
-    static struct PID pid_right ={300,0,0,7000,12500,PID_Control};
-    pid_left.PID_Control(Target_X_Site,USART_Deal(1),&pid_left);
-    pid_right.PID_Control(Target_X_Site,USART_Deal(1),&pid_right);
+    static struct PID pid_left = {-10,0,-5,500,3500,PID_Control};
+    static struct PID pid_right ={10,0,5,500,3500,PID_Control};
+    uint16_t temp_current = USART_Deal(1);
 
-    gpio_put(25,1);
+    pid_left.PID_Control(Target_X_Site,temp_current,&pid_left);
+    pid_right.PID_Control(Target_X_Site,temp_current,&pid_right);
+
+    //gpio_put(25,1);
     //编码器读值
     encoder_GetSign();
 
@@ -124,8 +126,33 @@ start:
     float Letf_output = Bash_Left_PWM + pid_left.output;
     float Right_output = Bash_Right_PWM + pid_right.output;
     printf("out:%d",Letf_output);
-    Motor_Bash_Load(Letf_output,Right_output);
+    Motor_Load(Letf_output,Right_output);
     return;
+}
+
+
+void Turn_Control()
+{
+    #ifdef __PID
+
+    static struct PID pid_left = {-20,0,0,500,3500,PID_Control};
+    static struct PID pid_right ={20,0,0,500,3500,PID_Control};
+
+    uint16_t temp_current = USART_Deal(5);        
+    #endif
+
+    static uint8_t Turn_Flag = 0;
+    // 先不读坐标，开环跑
+    if(!Turn_Flag)
+    {
+        Motor_Load(-5000,-5000);
+        AllStop
+        Turn_Flag = 1;
+    }
+    Motor_Load(4500,-500);
+    
+    
+
 }
 
 

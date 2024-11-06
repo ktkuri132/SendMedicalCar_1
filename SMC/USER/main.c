@@ -89,6 +89,10 @@ void core1_main()
         //检查数据格式
         switch (UART_DATA_TYPE)
         {
+            case 6:
+                OLED_Clear();
+                OLED_Printf(0, 0,OLED_8X16, "nothing to do");
+                break;
             case 1:
                 OLED_Clear();
                 OLED_Printf(0, 0,OLED_8X16, "ex:%d,ey:%d",USART_Deal(1),USART_Deal(2));
