@@ -149,7 +149,6 @@ uint16_t USART_Deal(uint8_t point_note)
             return temp_target;         //直接返回
         }
         
-
         sum = sum * 10 + (temp_target - '0');
     }
 

@@ -64,17 +64,10 @@ int main()
         
     }
 }   
-
-
-
-
-
-
+     
 //副核心的main函数
 void core1_main() 
 {
-    
-    
     //初始化OLED
     OLED_Init();
     //初始化串口

@@ -10,9 +10,11 @@ extern uint8_t UART_DATA_TYPE;
 void Control_task_Init()
 {
     
-    
-    //pid_test.PID_Control(0,0,&pid_test);
 }
+
+
+
+
 
 void Mode_test()
 {
@@ -26,13 +28,19 @@ void Mode_test()
     }
     else if(UART_DATA_TYPE==2)
     {
-        Turn_Control();
+        
+        
+        
+        
     }
     else
     {
         //Medical_interput_callback();
     }
 }
+
+
+
 
 /// @brief 任务选择
 void Task_Choose()

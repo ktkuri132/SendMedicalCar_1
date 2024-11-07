@@ -25,7 +25,6 @@ bool encoder_GetSign()
     encode1_count = 0;
     encode2_count = 0;
     return true;
-
 }
 
 /// @brief 基本PID计算函数
@@ -94,7 +93,7 @@ void Motor_Load(float Motor_Left,float Motor_Right)
     }
 }
 
-/// @brief 巡线控制
+// @brief 巡线控制
 void Line_Control()
 {
     static struct PID pid_left = {-10,0,-5,500,3500,PID_Control};
@@ -131,26 +130,63 @@ start:
 }
 
 
-void Turn_Control()
+uint8_t Turn_Data=0;
+
+
+/// @brief 对转向情况的初始化，对于转向的处理：在单次，摄像头扫到数字时，此时转向系统就要初始化，以此规定单次的路径，比如第几个路口转向，转向方向
+/// @param Turn_Time 第几个路口转向 
+/// @param Turn_Strat 左转还是右转
+void Turn_Init(uint8_t Turn_Time,uint8_t Turn_Strat)
 {
-    #ifdef __PID
+                   
+}
 
-    static struct PID pid_left = {-20,0,0,500,3500,PID_Control};
-    static struct PID pid_right ={20,0,0,500,3500,PID_Control};
-
-    uint16_t temp_current = USART_Deal(5);        
-    #endif
-
-    static uint8_t Turn_Flag = 0;
-    // 先不读坐标，开环跑
-    if(!Turn_Flag)
+/// @brief 转向检查：研究转向状态的细节
+void Turn_Check()
+{
+    static uint8_t Turn_Times = Turn_Times_2;        // 转向次数
+    static uint8_t Time_Strat = Time_1_Enable_Left; // 转向情况：转不转，转哪边
+    // 转向要有两个前提：1.转向次数大于0  2.本次路口可以转向
+    while ((UART_DATA_TYPE==2)&&(Turn_Times>0))     // 只要转向机会大于0，就转向，转向后机会减1
     {
-        Motor_Load(-5000,-5000);
-        AllStop
-        Turn_Flag = 1;
+        Turn_Control(Time_Strat);
     }
-    Motor_Load(4500,-500);
-    
+    Turn_Times--;
+
+}
+
+// 定义转向使能，控制是否转向
+uint8_t Turn_Flag = 0;
+
+void Turn_Control(uint8_t orientation)
+{
+
+    if(!Turn_Flag)  // 如果没打开转向，就不转
+    {
+        return;
+    }
+
+    // 定义转向缓冲
+    static uint8_t Turn_buffer = 0;
+    if(!Turn_buffer)
+    {
+        Motor_Load(0,0);
+        AllStop
+        Turn_buffer = 1;
+    }
+
+    if(orientation==right)
+    {
+        Motor_Load(-10500,10500);
+    }
+    else if(orientation==left)
+    {
+        Motor_Load(12500,-12500);
+    }
+    else
+    {
+        return;
+    }
     
 
 }
